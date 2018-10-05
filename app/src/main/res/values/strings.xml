@@ -2,4 +2,7 @@
     <string name="app_name">SimpleApplication</string>
     <string name="go_to_fragment">Go to Fragment</string>
     <string name="go_to_activity">Go to Activity</string>
+    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="name">UserName</string>
 </resources>

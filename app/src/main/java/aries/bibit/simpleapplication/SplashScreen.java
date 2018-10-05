@@ -25,5 +25,5 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(new Intent(SplashScreen.this, MainActivity.class));
             }
         }, splashInterval);
-    }
+    }, splashInterval);
 }
