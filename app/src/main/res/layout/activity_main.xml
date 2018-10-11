@@ -4,27 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="aries.bibit.simpleapplication.MainActivity">
+    tools:context="com.example.bibit_aries.bibitaries.MainActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Fragment"
-        android:text="@string/go_to_fragment"
-        android:layout_centerInParent="true"/>
+        android:text="fragment"
+        android:id="@+id/fragment"
+        android:onClick="kefragment"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="activity"
         android:id="@+id/activity"
-        android:layout_below="@+id/Fragment"
-        android:text="@string/go_to_activity"
-        android:layout_centerInParent="true"/>
-    <FrameLayout
+        android:onClick="keactivity"
+        android:layout_below="@id/fragment"
+        />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/frame">
-        android:t
-    </FrameLayout>
+        android:text="add user"
+        android:id="@+id/activity"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list user"
+        android:id="@+id/activity"
+        android:gravity="center
+"
+        />
 
 </RelativeLayout>
-
