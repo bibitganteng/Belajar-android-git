@@ -1,13 +1,10 @@
-package aries.bibit.simpleapplication.util;
+package com.example.bibit_aries.bibitaries.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import android.preference.Preference;
-import java.util.prefs.Preferences;
-
 /**
- * Created by amikom on 28/09/2018.
+ * Created by bibit_aries on 10/18/2018.
  */
 
 public class PreferencesHelper {
@@ -17,11 +14,11 @@ public class PreferencesHelper {
     private PreferencesHelper(Context context) {
         sharedPreferences = context
                 .getApplicationContext()
-                .getSharedPreferences("simple.adnroid.app", Context.MODE_PRIVATE);
+                .getSharedPreferences("simple.android.app", Context.MODE_PRIVATE);
     }
 
-    public static PreferencesHelper getInstance(Context context){
-        if (INSTANCE == null){
+    public static PreferencesHelper getInstance(Context context) {
+        if (INSTANCE == null) {
             INSTANCE = new PreferencesHelper(context);
         }
         return INSTANCE;
@@ -31,15 +28,19 @@ public class PreferencesHelper {
         return sharedPreferences;
     }
 
+
     public Boolean isLogin() {
         return sharedPreferences.getBoolean("isLogin", false);
     }
+
     public void setLogin(boolean isCall) {
         sharedPreferences.edit().putBoolean("isLogin", isCall).apply();
     }
+
     public void setName(String isName) {
         sharedPreferences.edit().putString("isName", isName).apply();
     }
+
     public String getName() {
         return sharedPreferences.getString("isName", "");
     }

@@ -1,13 +1,13 @@
-package aries.bibit.simpleapplication;
+package com.example.bibit_aries.bibitaries;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class second_activity extends AppCompatActivity {
+public class item_mahasiswa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_activity);
+        setContentView(R.layout.activity_item_mahasiswa);
     }
 }
